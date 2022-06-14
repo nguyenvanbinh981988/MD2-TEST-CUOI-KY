@@ -28,7 +28,7 @@ public class Controler {
             System.out.println("8. write in file");
             System.out.println("9. Exit");
 
-            int choice = valiDate.choice("choice");
+            int choice = valiDate.choice1("choice");
 
             switch (choice){
                 case 1:
@@ -140,14 +140,14 @@ public class Controler {
                     System.out.println("this is not this ID in list, please check again");
                     productManageMenu();
             } else {
-                System.out.println("Delete ID " + id +" is successful");
+                System.out.println("Delete ID " + id +" is successful \n");
             }
         }
 
         //    case 5
         public void sortFllowPrice(){
             Collections.sort(products);
-            System.out.println("sort by ascending price successfully");
+            System.out.println("sort by ascending price successfully \n");
 
         }
 
@@ -170,7 +170,7 @@ public class Controler {
             switch (choice) {
                 case 1:
                     readAndWriteCSV.readFile(products);
-                    System.out.println("read file is successful");
+                    System.out.println("read file is successful \n");
                     break;
                 case 2:
                     productManageMenu();
@@ -192,7 +192,7 @@ public class Controler {
             switch (choice) {
                 case 1:
                     readAndWriteCSV.writeFile(products);
-                    System.out.println("write file is successful");
+                    System.out.println("write file is successful \n");
                     break;
                 case 2:
                     productManageMenu();

@@ -45,14 +45,14 @@ public class ValiDate {
                 }
     }
 
-    public int choice(String a) {
+    public int choice1(String a) {
             try {
                 System.out.println("Enter " + a + " from 1 to 9");
                 int b = Integer.parseInt(input.nextLine());
                 if (b>0 || b<10) {
                     return b;
                 } else {
-                    return choice(a);
+                    return choice1(a);
                 }
             }
             catch (Exception e){
@@ -68,7 +68,7 @@ public class ValiDate {
             if (b>0 || b<3) {
                 return b;
             } else {
-                return choice(a);
+                return choice2(a);
             }
         }
         catch (Exception e){
